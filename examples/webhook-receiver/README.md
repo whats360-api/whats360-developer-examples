@@ -1,6 +1,6 @@
 # Webhook receivers
 
-Receivers for the Whats360 **outgoing** webhook (Whats360 posts message data to your URL). Documented payload fields only: `phone, sender_name, message, message_id, chat_jid, timestamp, media_url, instance_id`.
+Receivers for the whats360.live **outgoing** webhook (whats360.live posts message data to your URL). Documented payload fields only: `phone, sender_name, message, message_id, chat_jid, timestamp, media_url, instance_id`.
 
 | Folder | Stack | Test status |
 |---|---|---|
