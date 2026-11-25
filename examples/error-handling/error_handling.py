@@ -4,7 +4,7 @@ ACTIONS = {
     401: "Token is invalid or expired. Get a fresh token from the dashboard.",
     403: "A message or request limit was reached. Check your plan limits.",
     404: "Device (instance_id) not found. List devices to find the right ID.",
-    463: "WhatsApp restriction: open the chat from the phone once, then retry.",
+    463: "Recipient-related per unverified notes. Do not message the number to work around the error; confirm the cause in the dashboard or with support.",
     500: "Server error. Retry later with backoff.",
 }
 
