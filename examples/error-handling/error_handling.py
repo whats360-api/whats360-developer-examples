@@ -1,11 +1,11 @@
-"""Maps documented Whats360 error codes to actions. Pure function, easy to unit test."""
+"""Maps error codes from user-supplied, unverified notes to suggested actions. Pure function, easy to unit test. Not confirmed against the live API."""
 ACTIONS = {
-    400: "Fix the request: a parameter is missing or malformed.",
-    401: "Token is invalid or expired. Get a fresh token from the dashboard.",
-    403: "A message or request limit was reached. Check your plan limits.",
-    404: "Device (instance_id) not found. List devices to find the right ID.",
+    400: "Unverified: fix the request: a parameter is missing or malformed.",
+    401: "Unverified: token is invalid or expired. Get a fresh token from the dashboard.",
+    403: "Unverified: a message or request limit was reached. Check your plan limits.",
+    404: "Unverified: device (instance_id) not found. List devices to find the right ID.",
     463: "Recipient-related per unverified notes. Do not message the number to work around the error; confirm the cause in the dashboard or with support.",
-    500: "Server error. Retry later with backoff.",
+    500: "Unverified: server error. Retry later with backoff.",
 }
 
 def explain(status: int) -> str:
